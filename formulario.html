@@ -1,0 +1,52 @@
+<!-- url imagem de fundo-->
+<!-- https://images.unsplash.com/photo-1564121211835-e88c852648ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles-form/styles.css" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <!-- copiar nav da home -->
+    <nav></nav>
+    <h1 id="heading">Agende sua Consulta</h1>
+    <main>
+      <section class="inputs">
+        <p>Preencha todos os dados:</p>
+        <form class="formulario" action="#none">
+          <label for="pnome">Nome: </label
+          ><input type="text" id="pnome" required />
+          <label for="snome">Sobrenome: </label
+          ><input type="text" id="snome" required />
+          <label for="email">Email: </label
+          ><input type="text" id="email" required />
+          <label for="idade">Idade: </label
+          ><input type="number" id="idade" required />
+
+          <section class="selecoes">
+            <label for="espec">Especialidade: </label
+            ><select name="espec" id="espec" required>
+              <option value="psicologo">Psicólogo</option>
+              <option value="psiquiatra">Psiquiatra</option>
+              <option value="terapeuta">Terapeuta</option>
+              <option value="assistente">Assistente Social</option>
+            </select>
+
+            <label for="horario">Período: </label>
+            <select name="horario" id="horario" required>
+              <option value="manha">Manhã</option>
+              <option value="tarde">Tarde</option>
+              <option value="noite">Noite</option>
+            </select>
+          </section>
+          <button class="submit">Agendar</button>
+        </form>
+      </section>
+    </main>
+    <!-- copiar footer da home-->
+    <footer></footer>
+  </body>
+</html>

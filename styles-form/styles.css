@@ -1,0 +1,55 @@
+body {
+  /*background-image: url(https://images.unsplash.com/photo-1564121211835-e88c852648ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+  background-position: center; */
+  background-color: #cae9ff;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 80vh;
+  justify-content: space-around;
+}
+input {
+  width: 20%;
+}
+select {
+  width: 10%;
+}
+
+.submit,
+label,
+h1,
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+input,
+select,
+textarea {
+  background: none;
+  font-size: 16px;
+  padding: 0.3em;
+  display: block;
+  width: 20%;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #1b4965;
+}
+.submit {
+  margin: 1em 0;
+  width: 7%;
+  background: none;
+  padding: 0.4em 0;
+  border: 2px solid #1b4965;
+  border-radius: 1em;
+}
+
+input:focus {
+  border-bottom: none;
+}
+
+.selecoes {
+  display: flex;
+  justify-content: center;
+}

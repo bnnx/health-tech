@@ -7,24 +7,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles-form/styles.css" />
-    <title>Formulario</title>
+    <title>Health Tech - Agendamento</title>
   </head>
   <body>
     <!-- copiar nav da home -->
-    <nav></nav>
-    <h1 id="heading">Agende sua Consulta</h1>
+    <nav>nav igual da home aqui</nav>
     <main>
-      <section class="inputs">
-        <p>Preencha todos os dados:</p>
+      <section class="left">
+        <div class="form-header">
+          <h2>Agende sua Consulta</h2>
+          <h4>Preencha todos os dados e retornaremos o mais breve possível</h4>
+        </div>
         <form class="formulario" action="#none">
           <label for="pnome">Nome: </label
-          ><input type="text" id="pnome" required />
+          ><input
+            type="text"
+            id="pnome"
+            class="campo-input"
+            required
+            placeholder="Nome"
+          />
           <label for="snome">Sobrenome: </label
-          ><input type="text" id="snome" required />
+          ><input
+            type="text"
+            id="snome"
+            class="campo-input"
+            required
+            placeholder="Sobrenome"
+          />
           <label for="email">Email: </label
-          ><input type="text" id="email" required />
-          <label for="idade">Idade: </label
-          ><input type="number" id="idade" required />
+          ><input
+            type="text"
+            id="email"
+            class="campo-input"
+            required
+            placeholder="Email"
+          />
+          <div class="field-idade">
+            <label for="idade">Idade: </label
+            ><input
+              type="number"
+              id="idade"
+              class="campo-input"
+              max="120"
+              min="13"
+              required
+            />
+          </div>
 
           <section class="selecoes">
             <label for="espec">Especialidade: </label
@@ -42,11 +71,12 @@
               <option value="noite">Noite</option>
             </select>
           </section>
-          <button class="submit">Agendar</button>
+          <button class="submit-button">Agendar</button>
         </form>
       </section>
+      <section class="right"></section>
     </main>
     <!-- copiar footer da home-->
-    <footer></footer>
+    <footer>footer igual da home aqui</footer>
   </body>
 </html>

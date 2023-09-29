@@ -13,12 +13,17 @@ body {
 #container {
   text-align: center;
 
-  background-color: #bfddf3;
+  background-color: white;
+  width: 100%;
 
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.top-container {
+  background-color: #E5F5F2;
+  margin: 1% 1% 1% 1%;
+  border-radius: 10px;
 }
 
 /* CSS DOBRA 1 */
@@ -162,20 +167,18 @@ body {
 /* CSS DOBRA 3 */
 
 #area-dobra3 {
-  width: 80%;
+  display: inline-block;
+  margin-top: 3%;
 }
 
 /* CSS DOBRA 4 */
 
 #area-dobra4 {
-  margin: 50px 0px;
+  margin: 4% 10%;
+  padding: 25px;
 
-  width: 80%;
-  height: 550px;
-
-  background-color: #ffffff;
-  border-radius: 15px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: #F6F2FF;
+  border-radius: 10px;
 
   display: flex;
   justify-content: space-between;
@@ -312,10 +315,15 @@ footer {
   font-weight: bold;
 }
 
+.subtitle-container {
+  margin-top: 2%;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
 .subtitle {
   color: #aaa;
   font-weight: bold;
-  margin-top: 2%;
   text-align: center;
 }
 
@@ -341,6 +349,9 @@ footer {
 .card-subtitle {
   color: #aaa;
   font-weight: bold;
-  text-align: center;
   margin-top: 5%;
+  text-align: center;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }

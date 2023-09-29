@@ -1,343 +1,346 @@
 /* CSS GLOBAL */
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: arial, helvetica, sans-serif;
-    font-size: 12px;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 12px;
 }
 
 #container {
-    text-align: center;
+  text-align: center;
 
-    background-color: #BFDDF3;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  background-color: #bfddf3;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* CSS DOBRA 1 */
 
 #area-dobra1 {
-    margin: 10px;
-    width: 90%;
-    height: 30px;
+  margin: 10px;
+  width: 90%;
+  height: 30px;
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #area-logo-icon {
-    width: 20%;
+  width: 20%;
 
-    font-size: 24px;
-    font-weight: 700;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 #area-menu {
-    width: 50%;
+  width: 50%;
 }
 
-#area-menu ul{
-    margin: 0;
-    padding: 0;
+#area-menu ul {
+  margin: 0;
+  padding: 0;
 }
 
-#area-menu ul li{
-    list-style: none;
-    margin: 10px;
-    display: inline;
+#area-menu ul li {
+  list-style: none;
+  margin: 10px;
+  display: inline;
 }
 
-#area-menu ul li a{
-    padding: 10px 20px;
-    margin: 0;
+#area-menu ul li a {
+  padding: 10px 20px;
+  margin: 0;
 
-    font-size: 14px;
-    font-weight: 800;
-    align-items: baseline;
-    
-    color: #297373;
-    text-decoration: none;
+  font-size: 14px;
+  font-weight: 800;
+  align-items: baseline;
 
-    
-    border: 0px solid #f00;
-    border-radius: 5px;
+  color: #297373;
+  text-decoration: none;
+
+  border: 0px solid #f00;
+  border-radius: 5px;
 }
 
-#area-menu ul li a:hover{
-    color: #0A100D;
-    text-decoration: none;
+#area-menu ul li a:hover {
+  color: #0a100d;
+  text-decoration: none;
 }
 
-#area-menu ul li button{
-    width: 200px;
+#area-menu ul li .bt-consulta {
+  width: 200px;
 
-    padding: 7px;
-    cursor: pointer;
+  padding: 7px;
+  cursor: pointer;
 
-    font-size: 14px;
-    font-weight: 800;
+  font-size: 14px;
+  font-weight: 800;
+  color: #fff;
 
-    border: none;
-    border-radius: 5px;
+  border: none;
+  border-radius: 5px;
 
-    background-color: #297373;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: #297373;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-#area-menu ul li button:hover{
-    width: 200px;
+#area-menu ul li .bt-consulta:hover {
+  width: 200px;
 
-    padding: 7px;
-    cursor: pointer;
+  padding: 7px;
+  cursor: pointer;
 
-    font-size: 14px;
-    font-weight: 800;
-    color: #297373;
+  font-size: 14px;
+  font-weight: 800;
+  color: #297373;
 
-    border: none;
-    border-radius: 5px;
+  border: none;
+  border-radius: 5px;
 
-    background-color: #FFFFFF;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 /* CSS DOBRA 2 */
 
-#area-dobra2{
-    margin: 10px;
-    width: 90%;
-    height: 450px;
+#area-dobra2 {
+  margin: 10px;
+  width: 90%;
+  height: 450px;
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
-#area-dobra2 article{
-    width: 25%;
-    height: 100%;
+#area-dobra2 article {
+  width: 25%;
+  height: 100%;
 
-    text-align: start;
+  text-align: start;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-#area-dobra2 article h1{
-    font-size: 38px;
+#area-dobra2 article h1 {
+  font-size: 38px;
 }
 
-#area-dobra2 article h5{
-    font-size: 16px;
+#area-dobra2 article h5 {
+  font-size: 16px;
 }
 
-#area-dobra2 article button{
-    margin: 25px 0;
-    padding: 10px 0;
+#area-dobra2 article button {
+  margin: 25px 0;
+  padding: 10px 0;
 
-    cursor: pointer;
-    width: 40%;
+  cursor: pointer;
+  width: 40%;
 
-    font-size: 16px;
-    font-weight: 700;
-    
-    color: #FFFFFF;
-    background-color: #297373;
-    
-    border: none;
-    border-radius: 7px;
+  font-size: 16px;
+  font-weight: 700;
+
+  color: #ffffff;
+  background-color: #297373;
+
+  border: none;
+  border-radius: 7px;
 }
 
 /* CSS DOBRA 3 */
 
-#area-dobra3{
-    width: 80%;
+#area-dobra3 {
+  width: 80%;
 }
 
 /* CSS DOBRA 4 */
 
-#area-dobra4{
-    margin: 50px 0px;
+#area-dobra4 {
+  margin: 50px 0px;
 
-    width: 80%;
-    height: 550px;
+  width: 80%;
+  height: 550px;
 
-    background-color: #FFFFFF;
-    border-radius: 15px;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#area-depoimentos{
-    width: 50%;
-    height: 100%;
+#area-depoimentos {
+  width: 50%;
+  height: 100%;
 
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
-#area-depoimentos section{
-    width: 50%;
+#area-depoimentos section {
+  width: 50%;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
-#area-depoimentos .avatar, .avatar-2{
-    background-color: #BFDDF3;
+#area-depoimentos .avatar,
+.avatar-2 {
+  background-color: #bfddf3;
 
-    width: 60%;
-    height: 40%;
-    
-    padding: 15px;
-    border-radius: 7px;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  width: 60%;
+  height: 40%;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-#area-depoimentos .avatar{
-    margin: 25px;
+#area-depoimentos .avatar {
+  margin: 25px;
 }
 
-#area-depoimentos .avatar-2{
-    margin-top: 50px;
-    background-color: #F8A4CE;
+#area-depoimentos .avatar-2 {
+  margin-top: 50px;
+  background-color: #f8a4ce;
 }
 
-#area-depoimentos .avatar h3, .avatar-2 h3{
-    padding: 15px 0;
+#area-depoimentos .avatar h3,
+.avatar-2 h3 {
+  padding: 15px 0;
 
-    text-align: start;
+  text-align: start;
 }
 
-#area-depoimentos .avatar h5, .avatar-2 h5{
-    text-align: start;
+#area-depoimentos .avatar h5,
+.avatar-2 h5 {
+  text-align: start;
 }
 
-#area-cta{
-    width: 50%;
-    height: 100%;
+#area-cta {
+  width: 50%;
+  height: 100%;
 
-    padding: 10px 50px;
-    text-align: start;
+  padding: 10px 50px;
+  text-align: start;
 
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
 }
 
-#area-cta h2{
-    padding: 15px 0;
+#area-cta h2 {
+  padding: 15px 0;
 
-    font-size: 18px;
-    text-transform: uppercase;
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
-#area-cta h1{
-    padding: 15px 0;
+#area-cta h1 {
+  padding: 15px 0;
 
-    font-size: 40px;
+  font-size: 40px;
 
-    text-align: start;
+  text-align: start;
 }
 
-#area-cta h3{
-    width: 90%;
+#area-cta h3 {
+  width: 90%;
 
-    padding: 15px 0;
+  padding: 15px 0;
 
-    font-size: 14px;
-    font-weight: 400;
+  font-size: 14px;
+  font-weight: 400;
 }
 
-#area-cta button{
-    margin: 25px 0;
-    padding: 10px 0;
+#area-cta button {
+  margin: 25px 0;
+  padding: 10px 0;
 
-    cursor: pointer;
-    width: 40%;
+  cursor: pointer;
+  width: 40%;
 
-    font-size: 16px;
-    font-weight: 700;
-    
-    color: #FFFFFF;
-    background-color: #297373;
-    
-    border: none;
-    border-radius: 7px;
+  font-size: 16px;
+  font-weight: 700;
+
+  color: #ffffff;
+  background-color: #297373;
+
+  border: none;
+  border-radius: 7px;
 }
 
 /* CSS DOBRA 5 */
 
-footer{
-    width: 100%;
+footer {
+  width: 100%;
 
-    margin: 50px 0px 0px 0px;
-    padding: 15px;
+  margin: 50px 0px 0px 0px;
+  padding: 15px;
 
-    font-size: 14px;
-    font-weight: 600;
-    background-color: #F1F1F1;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  background-color: #f1f1f1;
 }
-
 
 /* STEPS */
 
 .steps-title {
-    color: #000;
-    text-align: center;
-    font-weight: bold;
+  color: #000;
+  text-align: center;
+  font-weight: bold;
 }
 
 .subtitle {
-    color: #AAA;
-    font-weight: bold;
-    margin-top: 2%;
-    text-align: center; 
+  color: #aaa;
+  font-weight: bold;
+  margin-top: 2%;
+  text-align: center;
 }
 
 .card-container {
-    display: flex;
-    flex-direction: row;
-    margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
 }
 
 .image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .card-title {
-    color: #000;
-    font-weight: bold;
-    text-align: center; 
-    margin-top: 5%;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5%;
 }
 
 .card-subtitle {
-    color: #AAA;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 5%;
+  color: #aaa;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5%;
 }

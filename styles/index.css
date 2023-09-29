@@ -162,8 +162,7 @@ body {
 /* CSS DOBRA 3 */
 
 #area-dobra3{
-    border: 1px solid red;
-    width: 100%;
+    width: 80%;
 }
 
 /* CSS DOBRA 4 */
@@ -299,4 +298,46 @@ footer{
     font-size: 14px;
     font-weight: 600;
     background-color: #F1F1F1;
+}
+
+
+/* STEPS */
+
+.steps-title {
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+}
+
+.subtitle {
+    color: #AAA;
+    font-weight: bold;
+    margin-top: 2%;
+    text-align: center; 
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.card-title {
+    color: #000;
+    font-weight: bold;
+    text-align: center; 
+    margin-top: 5%;
+}
+
+.card-subtitle {
+    color: #AAA;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5%;
 }

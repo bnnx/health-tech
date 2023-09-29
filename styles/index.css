@@ -7,7 +7,7 @@
 
 body {
   font-family: arial, helvetica, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 #container {
@@ -65,8 +65,8 @@ body {
   padding: 10px 20px;
   margin: 0;
 
-  font-size: 14px;
-  font-weight: 800;
+  font-size: 1.1em;
+  font-weight: 700;
   align-items: baseline;
 
   color: #297373;
@@ -87,8 +87,8 @@ body {
   padding: 7px;
   cursor: pointer;
 
-  font-size: 14px;
-  font-weight: 800;
+  font-size: 1.1em;
+  font-weight: 700;
   color: #fff;
 
   border: none;
@@ -104,8 +104,8 @@ body {
   padding: 7px;
   cursor: pointer;
 
-  font-size: 14px;
-  font-weight: 800;
+  font-size: 1.1em;
+  font-weight: 700;
   color: #297373;
 
   border: none;
@@ -177,7 +177,7 @@ body {
   margin: 4% 10%;
   padding: 25px;
 
-  background-color: #F6F2FF;
+  background-color: #f6f2ff;
   border-radius: 10px;
 
   display: flex;

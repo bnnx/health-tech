@@ -2,17 +2,8 @@
   box-sizing: border-box;
 }
 body {
-  /*background-image: url(https://images.unsplash.com/photo-1564121211835-e88c852648ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
-  background-position: center; */
-  /* background-color: #cae9ff; */
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-}
-
-nav,
-footer {
-  text-align: center;
-  background-color: #62b6cb;
 }
 
 main {
@@ -134,4 +125,8 @@ input:hover {
 
 .formulario .submit-button:hover {
   transform: scale(1.05);
+}
+
+footer {
+  margin-top: 0;
 }

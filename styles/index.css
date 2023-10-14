@@ -21,7 +21,7 @@ body {
 }
 
 .top-container {
-  background-color: #E5F5F2;
+  background-color: #e5f5f2;
   margin: 1% 1% 1% 1%;
   border-radius: 10px;
 }
@@ -139,7 +139,7 @@ body {
   justify-content: center;
 }
 
-#area-dobra2 article h1 {
+#area-dobra2 article h2 {
   font-size: 38px;
 }
 
@@ -322,7 +322,7 @@ footer {
 }
 
 .subtitle {
-  color: #aaa;
+  color: #999;
   font-weight: bold;
   text-align: center;
 }
@@ -347,7 +347,7 @@ footer {
 }
 
 .card-subtitle {
-  color: #aaa;
+  color: #999;
   font-weight: bold;
   margin-top: 5%;
   text-align: center;

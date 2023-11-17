@@ -37,18 +37,17 @@
       </div>
       <form class="formulario" action="#none">
         <div class="container">
-          <label for="pnome">Nome: </label><input type="text" id="pnome" class="campo-input" required>
+          <label for="pnome">Nome: </label><input type="text" id="pnome" class="campo-input">
 
-          <label for="snome">Sobrenome: </label><input type="text" id="snome" class="campo-input" required>
+          <label for="snome">Sobrenome: </label><input type="text" id="snome" class="campo-input">
 
-          <label for="email">Email: </label><input type="text" id="email" class="campo-input" required>
+          <label for="email">Email: </label><input type="text" id="email" class="campo-input">
 
-          <label for="idade">Idade: </label><input type="number" id="idade" class="campo-input" max="120" min="13"
-            required>
+          <label for="idade">Idade: </label><input type="number" id="idade" class="campo-input" max="120" min="13">
         </div>
         <div class="selecoes">
           <label for="espec">Especialidade: </label><select name="espec" id="espec">
-            <option value="psicologo">Psicólogo</option>
+            <option value="psico">Psicólogo</option>
             <option value="fisio">Fisioterapeuta</option>
             <option value="nutri">Nutricionista</option>
             <option value="psiquiatra">Psiquiatra</option>
@@ -61,13 +60,16 @@
 
           <label for="horario">Período: </label>
           <select name="horario" id="horario">
-            <option value="manha">Manhã</option>
-            <option value="tarde">Tarde</option>
-            <option value="noite">Noite</option>
+            <option value="Manhã">Manhã</option>
+            <option value="Tarde">Tarde</option>
+            <option value="Noite">Noite</option>
           </select>
         </div>
-        <button class="submit-button" onclick="enviarFormulario()">Agendar</button>
-        <button class="clear-button" onclick="limparCampos()">Limpar Campos</button>
+        <section class="submit-sect">
+          <button class="submit-button" onclick="enviarFormulario()">Agendar</button>
+          <button class="clear-button" onclick="limparCamposForm()">Limpar Campos</button>
+          <button class="clear-button" onclick="excluirTudo()">Excluir Consultas</button>
+        </section>
       </form>
       <ul id="lista-consultas"></ul>
     </section>

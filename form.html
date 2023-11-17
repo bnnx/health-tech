@@ -66,8 +66,10 @@
             <option value="noite">Noite</option>
           </select>
         </div>
-        <button class="submit-button">Agendar</button>
+        <button class="submit-button" onclick="enviarFormulario()">Agendar</button>
+        <button class="clear-button" onclick="limparCampos()">Limpar Campos</button>
       </form>
+      <ul id="lista-consultas"></ul>
     </section>
     <div class="right"></div>
   </main>
@@ -75,6 +77,8 @@
     Copyright &#169; 2023 - Projeto 01 desenvolvimento Front-End. Todos os
     direitos reservados.
   </footer>
+
+  <script src="./script/script.js"></script>
 </body>
 
 </html>

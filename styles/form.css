@@ -121,6 +121,23 @@ select {
   transition: transform 0.05s ease-in;
 }
 
+.formulario .clear-button {
+  padding: 1% 6%;
+  align-self: center;
+  text-align: center;
+  border: 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 800;
+  border-radius: 3px;
+  margin-top: 4%;
+  background: linear-gradient(to right, #FF6961 0%, #FF0000 100%);
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-size: large;
+  transition: transform 0.05s ease-in;
+}
+
 .selecoes label,
 label {
   font-size: 1.2em;
@@ -169,6 +186,37 @@ input:hover {
 
 .formulario .submit-button:hover {
   transform: scale(1.05);
+}
+
+#lista-consultas{
+  list-style: none;
+  padding: 0;
+  margin: 20px;
+}
+
+#lista-consultas li{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  
+  margin-bottom: 10px;
+  padding: 10px;
+
+  display:flex;
+  justify-content: space-between;
+}
+
+#lista-consultas li span{
+  flex: 1;
+}
+
+#lista-consultas li button{
+  background-color: #E74C3C;
+  color: #ffffff;
+
+  border: none;
+  padding: 5px 10px;
+
+  cursor: pointer;
 }
 
 footer {

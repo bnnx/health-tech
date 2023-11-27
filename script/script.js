@@ -109,22 +109,24 @@ function excluirTudo() {
   limparCamposForm();
 }
 
+// funcao de pesquisa usando nome do cliente como parametro
 function search() {
-  const searchText = document.getElementById('search').value;
-  
-  if (searchText && searchText.trim().length > 0){
+  const searchText = document.getElementById("search").value;
+
+  if (searchText && searchText.trim().length > 0) {
     const lista = document.getElementById("lista-consultas");
     while (lista.firstChild) {
       lista.removeChild(lista.firstChild);
     }
-    
-    const consultas = JSON.parse(localStorage.getItem("consultas")) || [];
-    const normalizedText = searchText.trim().toLowerCase()
-    const filtered = consultas.filter(con => {
-      const fullname = `${con.nome} ${con.sobrenome}`
-      return fullname.trim().toLowerCase().includes(normalizedText)
-    })
 
+    const consultas = JSON.parse(localStorage.getItem("consultas")) || [];
+    const normalizedText = searchText.trim().toLowerCase();
+    const filtered = consultas.filter((con) => {
+      const fullname = `${con.nome} ${con.sobrenome}`;
+      return fullname.trim().toLowerCase().includes(normalizedText);
+    });
+
+    //criacao lista com filtro e adicao de botao e classes
     filtered.forEach((consulta) => {
       const item = document.createElement("li");
       item.innerHTML = `
@@ -136,14 +138,14 @@ function search() {
       lista.appendChild(item);
     });
   }
-
 }
 
+//funcao para limpar o filtro de pesquisa, retornando a lista completa
 function clearSearch() {
   const lista = document.getElementById("lista-consultas");
   while (lista.firstChild) {
     lista.removeChild(lista.firstChild);
   }
   document.getElementById("search").value = "";
-  carregarLista()
+  carregarLista();
 }

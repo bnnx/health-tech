@@ -170,7 +170,10 @@ input:hover {
 }
 
 .formulario .submit-button:hover,
-.clear-button:hover {
+.clear-button:hover,
+#search-button:hover,
+#clear-search-button:hover,
+#clear-all-button:hover {
   transform: scale(1.05);
 }
 

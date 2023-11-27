@@ -66,12 +66,22 @@
           </select>
         </div>
         <section class="submit-sect">
+          <button class="clear-button" onclick="limparCamposForm()">Limpar campos</button>
           <button class="submit-button" onclick="enviarFormulario()">Agendar</button>
-          <button class="clear-button" onclick="limparCamposForm()">Limpar Campos</button>
-          <button class="clear-button" onclick="excluirTudo()">Excluir Consultas</button>
         </section>
       </form>
+
+      <h3 id="appointments">Consultas agendadas</h3>
+
+      <div id="search-bar">
+        <input type="text" id="search" class="campo-input" placeholder="Digite o nome do paciente">
+        <button id="search-button"  onclick="search()">Pesquisar</button>
+        <button id="clear-search-button" onclick="clearSearch()">Limpar</button>
+      </div>
+
       <ul id="lista-consultas"></ul>
+
+      <button id="clear-all-button" onclick="excluirTudo()">Excluir todas consultas</button>
     </section>
     <div class="right"></div>
   </main>

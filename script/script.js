@@ -78,6 +78,7 @@ function carregarLista() {
     item.innerHTML = `
       <span>${consulta.data}</span>
       <span>${consulta.nome} ${consulta.sobrenome}</span>
+      <span>${consulta.especialidade} - ${consulta.horario}</span>
       <button class="delete-button" onclick="excluirItem(this)">Excluir</button>
     `;
     lista.appendChild(item);
@@ -102,8 +103,47 @@ function excluirItem(button) {
 function excluirTudo() {
   localStorage.clear("consultas");
   const lista = document.getElementById("lista-consultas");
-  while (lista.hasChildNodes) {
+  while (lista.firstChild) {
     lista.removeChild(lista.firstChild);
   }
   limparCamposForm();
+}
+
+function search() {
+  const searchText = document.getElementById('search').value;
+  
+  if (searchText && searchText.trim().length > 0){
+    const lista = document.getElementById("lista-consultas");
+    while (lista.firstChild) {
+      lista.removeChild(lista.firstChild);
+    }
+    
+    const consultas = JSON.parse(localStorage.getItem("consultas")) || [];
+    const normalizedText = searchText.trim().toLowerCase()
+    const filtered = consultas.filter(con => {
+      const fullname = `${con.nome} ${con.sobrenome}`
+      return fullname.trim().toLowerCase().includes(normalizedText)
+    })
+
+    filtered.forEach((consulta) => {
+      const item = document.createElement("li");
+      item.innerHTML = `
+        <span>${consulta.data}</span>
+        <span>${consulta.nome} ${consulta.sobrenome}</span>
+        <span>${consulta.especialidade} - ${consulta.horario}</span>
+        <button class="delete-button" onclick="excluirItem(this)">Excluir</button>
+      `;
+      lista.appendChild(item);
+    });
+  }
+
+}
+
+function clearSearch() {
+  const lista = document.getElementById("lista-consultas");
+  while (lista.firstChild) {
+    lista.removeChild(lista.firstChild);
+  }
+  document.getElementById("search").value = "";
+  carregarLista()
 }

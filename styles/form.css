@@ -204,7 +204,6 @@ input:hover {
   list-style: none;
   padding: 0;
   margin: 20px;
-  overflow: auto;
 }
 
 #lista-consultas li {
